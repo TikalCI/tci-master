@@ -11,7 +11,7 @@ git checkout master
 cp plugins.txt ..
 cat ../../src/resources/tci/tci-extra-plugins.txt >> ../plugins.txt
 cat ../plugins.txt | sort > plugins.txt
-docker build tci-master .
+docker build -t tci-master .
 
 cd ../..
 rm -rf temp/tci-bloody-jenkins
