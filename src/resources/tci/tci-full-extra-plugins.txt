@@ -20,7 +20,6 @@ github-oauth:0.29
 github-organization-folder:1.6
 global-build-stats:1.5
 golang:1.2
-google-login:1.4
 greenballs:1.15
 groovy:2.0
 hidden-parameter:0.0.4
