@@ -1,6 +1,1 @@
-ansicolor:0.5.2
-emailext-template:1.1
-simple-theme-plugin:0.5.1
-subversion:2.12.1
-throttle-concurrents:2.0.1
-ws-cleanup:0.36
+google-login:1.4

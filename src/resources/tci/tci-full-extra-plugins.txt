@@ -1,6 +1,5 @@
 analysis-core:1.95
 ansible:1.0
-ansicolor:0.5.2
 artifact-diff-plugin:1.3
 artifactdeployer:1.2
 bitbucket:1.1.8
@@ -14,7 +13,6 @@ cvs:2.14
 description-setter:1.10
 discard-old-build:1.05
 distfork:1.7
-emailext-template:1.1
 exclusive-execution:0.8
 ez-templates:1.3.2
 findbugs:4.72
@@ -22,6 +20,7 @@ github-oauth:0.29
 github-organization-folder:1.6
 global-build-stats:1.5
 golang:1.2
+google-login:1.4
 greenballs:1.15
 groovy:2.0
 hidden-parameter:0.0.4
@@ -57,14 +56,10 @@ restricted-register:0.1.7
 role-strategy:2.9.0
 saferestart:0.3
 shiningpanda:0.24
-simple-theme-plugin:0.5.1
 ssh2easy:1.4
-subversion:2.12.1
-throttle-concurrents:2.0.1
 uno-choice:2.1
 validating-string-parameter:2.4
 warnings:4.68
 whitesource:18.10.1
 windows-slaves:1.3.1
-ws-cleanup:0.36
 xunit:2.3.1

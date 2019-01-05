@@ -8,6 +8,11 @@ else
     echo "you must provide a version as parameter"
     exit 1
 fi
+
+git commit -am "Release $version" | head
+git tag $version
+git push origin HEAD --tags
+
 mkdir -p temp
 cd temp
 git clone git@github.com:TikalCI/tci-bloody-jenkins.git
@@ -33,3 +38,4 @@ docker push tikalci/tci-master-full:$version
 
 cd ../..
 rm -rf temp/tci-bloody-jenkins
+
