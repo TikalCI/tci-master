@@ -35,7 +35,7 @@ docker tag tikalci/tci-master-minimal:latest tikalci/tci-master-minimal:$version
 docker push tikalci/tci-master-minimal:latest
 docker push tikalci/tci-master-minimal:$version
 
-rm -rf /usr/share/jenkins | true
+rm -f plugins.txt | true
 
 cp ../origin-plguins.txt ../plugins.txt
 cat ../../src/resources/tci/tci-full-extra-plugins.txt >> ../plugins.txt
