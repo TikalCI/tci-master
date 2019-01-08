@@ -18,6 +18,11 @@ cd temp
 git clone git@github.com:TikalCI/tci-bloody-jenkins.git
 cd tci-bloody-jenkins
 git checkout master
+
+if [[ -d ../../src/config-handlers ]]; then
+    cp -R ../../src/config-handlers . | true
+fi
+
 cp plugins.txt ../origin-plguins.txt
 
 cp ../origin-plguins.txt ../plugins.txt
