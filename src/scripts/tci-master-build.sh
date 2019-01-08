@@ -35,6 +35,7 @@ docker tag tikalci/tci-master-minimal:latest tikalci/tci-master-minimal:$version
 docker push tikalci/tci-master-minimal:latest
 docker push tikalci/tci-master-minimal:$version
 
+sleep 30
 rm -f plugins.txt | true
 
 cp ../origin-plguins.txt ../plugins.txt
