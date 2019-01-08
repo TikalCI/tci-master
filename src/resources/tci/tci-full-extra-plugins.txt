@@ -15,11 +15,11 @@ discard-old-build:1.05
 distfork:1.7
 exclusive-execution:0.8
 ez-templates:1.3.2
+filesystem_scm:2.1
 findbugs:4.72
 github-oauth:0.29
 github-organization-folder:1.6
 global-build-stats:1.5
-golang:1.2
 greenballs:1.15
 groovy:2.0
 hidden-parameter:0.0.4
