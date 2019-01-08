@@ -13,6 +13,8 @@ git commit -am "Release $version" | head
 git tag $version
 git push origin HEAD --tags
 
+rm -rf temp/tci-bloody-jenkins
+
 mkdir -p temp
 cd temp
 git clone git@github.com:TikalCI/tci-bloody-jenkins.git
@@ -32,6 +34,8 @@ docker build -t tikalci/tci-master-minimal:latest .
 docker tag tikalci/tci-master-minimal:latest tikalci/tci-master-minimal:$version
 docker push tikalci/tci-master-minimal:latest
 docker push tikalci/tci-master-minimal:$version
+
+rm -rf /usr/share/jenkins | true
 
 cp ../origin-plguins.txt ../plugins.txt
 cat ../../src/resources/tci/tci-full-extra-plugins.txt >> ../plugins.txt
