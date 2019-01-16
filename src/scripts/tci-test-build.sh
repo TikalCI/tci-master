@@ -9,6 +9,7 @@ else
     exit 1
 fi
 
+rm -rf temp
 mkdir -p temp
 cd temp
 git clone git@github.com:TikalCI/tci-bloody-jenkins.git
