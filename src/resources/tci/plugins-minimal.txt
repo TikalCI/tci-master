@@ -1,3 +1,2 @@
 filesystem_scm:2.1
-pipeline-maven:3.5.15
 jclouds-jenkins:2.14
