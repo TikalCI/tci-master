@@ -47,7 +47,7 @@ def seedJobConfig(config){
                 job = jenkins.model.Jenkins.instance.createProject(org.jenkinsci.plugins.workflow.job.WorkflowJob, jobName)
             }
         }
-        def branchSpec = source?.branch ? "*/${source?.branch}" : (source?.tag ? "${source?.tag}" : [])
+        def branchSpec = source?.branch ? [new hudson.plugins.git.BranchSpec("*/${source?.branch}")] : (source?.tag ? [new hudson.plugins.git.BranchSpec("${source?.tag}")] : [])
         def scm = new hudson.plugins.git.GitSCM(
             hudson.plugins.git.GitSCM.createRepoList(
                 source?.remote, 
