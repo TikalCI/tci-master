@@ -28,7 +28,7 @@ fi
 cp plugins.txt ../origin-plguins.txt
 
 cp ../origin-plguins.txt ../plugins.txt
-cat ../../src/resources/tci/tci-extra-plugins.txt >> ../plugins.txt
+cat ../../src/resources/tci/tci-minimal.txt >> ../plugins.txt
 cat ../plugins.txt | sort > plugins.txt
 docker build -t tikalci/tci-master-minimal:latest .
 docker tag tikalci/tci-master-minimal:latest tikalci/tci-master-minimal:$version
@@ -39,7 +39,7 @@ sleep 30
 rm -f plugins.txt | true
 
 cp ../origin-plguins.txt ../plugins.txt
-cat ../../src/resources/tci/tci-full-extra-plugins.txt >> ../plugins.txt
+cat ../../src/resources/tci/tci-full.txt >> ../plugins.txt
 cat ../plugins.txt | sort > plugins.txt
 docker build -t tikalci/tci-master-full:latest .
 docker tag tikalci/tci-master-full:latest tikalci/tci-master-full:$version
