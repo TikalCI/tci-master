@@ -23,7 +23,7 @@ fi
 cp plugins.txt ../origin-plguins.txt
 
 cp ../origin-plguins.txt ../plugins.txt
-cat ../../src/resources/tci/tci-minimal.txt >> ../plugins.txt
+cat ../../src/resources/tci/plugins-minimal.txt >> ../plugins.txt
 cat ../plugins.txt | sort > plugins.txt
 
 docker build -t tikalci/tci-test-minimal:latest .
