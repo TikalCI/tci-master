@@ -24,7 +24,6 @@ greenballs:1.15
 groovy:2.0
 hidden-parameter:0.0.4
 internetmeme:1.0
-jclouds-jenkins:2.14
 jenkins-multijob-plugin:1.31
 job-import-plugin:3.0
 job-restrictions:0.8
@@ -33,11 +32,13 @@ kubernetes-pipeline-aggregator:1.5
 kubernetes-pipeline-arquillian-steps:1.5
 kubernetes-pipeline-devops-steps:1.5
 kubernetes-pipeline-steps:1.5
-mapdb-api:1.0.9.0
+mapdb-api:1.0.9
+nodejs:1.3.3
 nodelabelparameter:1.7.2
-openstack-cloud:2.40
+#openstack-cloud:2.40
 openJDK-native-plugin:1.1
 pam-auth:1.4
+parameterized-remote-trigger:3.0.9
 pipeline-aggregator-view:1.8
 pipeline-github-lib:1.0
 pipeline-maven:3.5.15
